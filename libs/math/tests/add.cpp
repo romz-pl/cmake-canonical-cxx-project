@@ -4,5 +4,5 @@
 
 TEST(add, simple)
 {
-    ASSERT_EQ(add(2, 4), 6);
+    ASSERT_EQ(romz::add(2, 4), 6);
 }

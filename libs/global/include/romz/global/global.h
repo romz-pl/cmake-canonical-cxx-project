@@ -2,6 +2,8 @@
 #include <stdexcept>
 #include <cassert>
 
+namespace romz {
+
 template<typename B>
 class global
 {
@@ -80,4 +82,6 @@ template<typename B>
 bool global<B>::exists() const
 {
     return m_ptr != nullptr;
+}
+
 }

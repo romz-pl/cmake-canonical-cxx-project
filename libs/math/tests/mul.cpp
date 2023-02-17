@@ -4,5 +4,5 @@
 
 TEST(mul, simple)
 {
-    ASSERT_EQ(mul(2, 4), 8);
+    ASSERT_EQ(romz::mul(2, 4), 8);
 }
