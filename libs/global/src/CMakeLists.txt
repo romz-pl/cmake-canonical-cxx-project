@@ -1,4 +1,4 @@
-set(LIB_NAME global)
+set(LIB_NAME romz-global)
 
 add_library(${LIB_NAME} STATIC
     global.cpp

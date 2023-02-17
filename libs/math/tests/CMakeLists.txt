@@ -6,7 +6,7 @@ add_executable(${TEST_NAME}
 )
 
 target_link_libraries(${TEST_NAME}
-    math
+    romz-math
     GTest::gtest
     GTest::gtest_main
 )

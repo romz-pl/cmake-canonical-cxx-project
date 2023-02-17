@@ -1,4 +1,4 @@
-set(LIB_NAME math)
+set(LIB_NAME romz-math)
 
 add_library(${LIB_NAME} STATIC
     add.cpp
