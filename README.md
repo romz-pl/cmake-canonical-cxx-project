@@ -28,6 +28,7 @@ Craig Scott, 2018-2022 by Craig Scott
 
 ## How to build
 ```bash
+rm -rf ./cmake-canonical-cxx-project
 git clone git@github.com:romz-pl/cmake-canonical-cxx-project.git
 rm -rf ./build-dir
 mkdir ./build-dir
