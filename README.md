@@ -27,6 +27,8 @@ Craig Scott, 2018-2022 by Craig Scott
 
 
 ## How to build
+
+Below is the **bash script** for building the project:  
 ```bash
 rm -rf ./cmake-canonical-cxx-project
 git clone git@github.com:romz-pl/cmake-canonical-cxx-project.git
@@ -36,7 +38,7 @@ cmake -S cmake-canonical-cxx-project -B ./build-dir
 cmake --build ./build-dir
 ctest --test-dir ./build-dir
 ```
-Possible output
+Possible output is the following:
 ```
 Internal ctest changing into directory: /home/romz/tmp/build-dir
 Test project /home/romz/tmp/build-dir
@@ -54,5 +56,4 @@ Test project /home/romz/tmp/build-dir
 6/6 Test #6: get_random_bytes.simple ..........   Passed    0.01 sec
 
 100% tests passed, 0 tests failed out of 6
-
 ```
