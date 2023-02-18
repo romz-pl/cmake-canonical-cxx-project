@@ -4,7 +4,8 @@ add_executable(${APP_NAME}
     main.cpp
 )
 
-execute_process(COMMAND git log -1 --pretty=format:%h
+message(${CMAKE_CURRENT_SOURCE_DIR})
+execute_process(COMMAND cd ${CMAKE_CURRENT_SOURCE_DIR} && git log -1 --pretty=format:%h
     OUTPUT_VARIABLE ROMZ_GIT_COMMIT
 )
 
