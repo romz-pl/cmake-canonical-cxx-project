@@ -34,9 +34,10 @@ rm -rf ./cmake-canonical-cxx-project
 git clone git@github.com:romz-pl/cmake-canonical-cxx-project.git
 rm -rf ./build-dir
 mkdir ./build-dir
-cmake -S cmake-canonical-cxx-project -B ./build-dir
+cmake -S ./cmake-canonical-cxx-project -B ./build-dir
 cmake --build ./build-dir
 ctest --test-dir ./build-dir
+cmake -S ./cmake-canonical-cxx-project -B ./build-dir --graphviz=./build-dir/canonical.dot
 ```
 Possible output is the following:
 ```
