@@ -1,5 +1,5 @@
-set(APP_NAME Hello)
+set(APP_NAME hello)
 
 add_executable(${APP_NAME}
-    hello.cpp
+    main.cpp
 )
