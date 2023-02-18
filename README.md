@@ -29,8 +29,29 @@ Craig Scott, 2018-2022 by Craig Scott
 ## How to build
 ```bash
 git clone git@github.com:romz-pl/cmake-canonical-cxx-project.git
+rm -rf ./build-dir
 mkdir ./build-dir
 cmake -S cmake-canonical-cxx-project -B ./build-dir
 cmake --build ./build-dir
 ctest --test-dir ./build-dir
+```
+Possible output
+```
+Internal ctest changing into directory: /home/romz/tmp/build-dir
+Test project /home/romz/tmp/build-dir
+    Start 1: global.construct
+1/6 Test #1: global.construct .................   Passed    0.00 sec
+    Start 2: global.double_init
+2/6 Test #2: global.double_init ...............   Passed    0.00 sec
+    Start 3: global.double_destroy
+3/6 Test #3: global.double_destroy ............   Passed    0.00 sec
+    Start 4: add.simple
+4/6 Test #4: add.simple .......................   Passed    0.00 sec
+    Start 5: mul.simple
+5/6 Test #5: mul.simple .......................   Passed    0.00 sec
+    Start 6: get_random_bytes.simple
+6/6 Test #6: get_random_bytes.simple ..........   Passed    0.01 sec
+
+100% tests passed, 0 tests failed out of 6
+
 ```
