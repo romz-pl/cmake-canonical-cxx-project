@@ -22,3 +22,15 @@ CMake is part of [Kitware’s](https://www.kitware.com/) collection of commercia
 Rafał Świdziński, 2022 Packt Publishing 
 3. [CMake Best Practices](https://www.packtpub.com/product/cmake-best-practices/9781803239729?_ga=2.79944087.1697182141.1676704201-933444911.1634053820),
 Dominik Berner, Mustafa Kemal Gilor, 2022 Packt Publishing
+4. [Professional CMake: A Practical Guide](https://crascit.com),
+Craig Scott, 2018-2022 by Craig Scott
+
+
+## How to build
+```bash
+git clone git@github.com:romz-pl/cmake-canonical-cxx-project.git
+mkdir ./build-dir
+cmake -S cmake-canonical-cxx-project -B ./build-dir
+cmake --build ./build-dir
+ctest --test-dir ./build-dir
+```
